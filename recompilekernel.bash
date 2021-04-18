@@ -1,0 +1,1 @@
+echo Entering Source Directory... && cd /usr/src/linux && echo Compiling Kernel and Modules... && make -j6 && make modules_install && make install && echo Configuring Grub.. && grub-mkconfig -o /boot/grub/grub.cfg && echo Rebuilding Modules... && emerge @module-rebuild && echo Done! Compilation Successful.
